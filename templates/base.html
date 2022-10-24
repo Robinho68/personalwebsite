@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Example Webpage</title>
+    <meta name="description" content="An example webpage.">
+    <meta name="author" content="Alex Rutar">
+  </head>
+  <body>
+    <header>
+      Robin Hwang (황정우)
+    </header>
+    <nav>
+      <a href="/writing">Writing</a>
+      <a href="main.html">About</a>
+      <a href="index.html">Resume</a>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>
